@@ -16,13 +16,23 @@ The model learns from past driving patterns and predicts which driver a trip bel
 - After training, it can classify a trip to a specific driver.
 Unlike traditional methods that look at static data (e.g., average speed), this model analyzes sequences of data over time, improving accuracy.
 
+In this project, we to finish a sequence classification task using deep learning. A trajectory data set with five taxi drivers' daily driving trajectories in 6 months is used. The primary objective is to predict which driver each 100-step sub-trajectory, extracted from the daily trajectories, belongs to. To evaluate the model, it will be tested on a separate set of data for five additional days (5 CSV files, same format as the training data), using the same preprocessing steps to ensure consistent data handling. This approach ensures consistency in data preparation across training and testing phases, allowing the model to accurately attribute each sub-trajectory to the correct driver.
+
+![image](https://github.com/user-attachments/assets/d3c4b2e0-9eb1-49fc-a2cb-00f4b2dffb3c)
+
+
+
 # Dataset
 
 We use GPS data collected from multiple taxi drivers. The dataset consists of multiple CSV files, each containing:
+- Plate Number – Unique identifier for the drive
 - Longitude & Latitude – The taxi's location at a specific time
 - Time – The timestamp of the GPS recording
 - Status – Whether the taxi is occupied or available
-- Plate Number – Unique identifier for the driver
+
+![image](https://github.com/user-attachments/assets/3226b1f5-aa14-4554-80a3-efa3aacf5a73)
+
+Above is an example of what the data looks like. Each trajectory step is detailed with features such as longitude, latitude, time, and status.
 
 # Data Processing
 
