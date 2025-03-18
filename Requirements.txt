@@ -1,0 +1,6 @@
+⚠️ numpy 1.26.4 (Different Version Installed: Required 1.23.5)
+⚠️ pandas 2.2.2 (Different Version Installed: Required 1.5.3)
+⚠️ tqdm 4.67.1 (Different Version Installed: Required 4.64.1)
+⚠️ scikit-learn 1.3.2 (Different Version Installed: Required 1.2.2)
+⚠️ torch 2.5.1+cu124 (Different Version Installed: Required 2.0.1)
+⚠️ torchvision 0.20.1+cu124 (Different Version Installed: Required 0.15.2)
